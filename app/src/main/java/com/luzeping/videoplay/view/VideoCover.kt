@@ -2,7 +2,9 @@ package com.luzeping.videoplay.view
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.widget.FrameLayout
+import com.luzeping.videoplay.R
 
 /**
  *  author : luzeping
@@ -26,7 +28,7 @@ class VideoCover : FrameLayout {
 
     private fun init() {
         removeAllViews()
-
+        LayoutInflater.from(context).inflate(R.layout.view_video_cover, this)
     }
 
 }
